@@ -1,0 +1,235 @@
+.about-container {
+  position: relative;
+}
+
+.about-image {
+  height: 360px;
+}
+
+.about-text {
+  text-align: center;
+  position: absolute;
+  top: 36%; /* Adjust vertically as needed */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #003C43;
+}
+
+.about-content{
+
+  margin: 4rem 2rem;
+  color: #003C43;
+  
+}
+
+.about-content h1 {
+    text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #003C43;
+}
+
+.about-points{
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 120px;
+}
+
+.about-points p{
+   font-size: 1.3rem;
+   margin-bottom: 28px;
+}
+
+.bullets{
+  margin-bottom: 10px;
+}
+
+
+
+.contact-info {
+  color: #CA8787;
+font-size: 1.5rem;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      flex-direction: column; 
+    padding: 2rem;
+    background-color: #fff; /* Optional: Change background color */
+}
+
+.contact-left {
+    background-color: #fff; /* Form background color */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-left-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-left-title h2 {
+    color: #003C43;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.contact-input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-input::placeholder {
+    color: #aaa;
+}
+
+/* button[type="submit"] {
+    background-color: #003C43;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #026672;
+} */
+
+.email-button {
+    background-color: #003C43;
+    color: #fff;
+    padding: 15px 32px; /* Padding around the text */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as block-level element */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin around the button */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    border: none; /* Removes the border */
+    border-radius: 3px; /* Rounded corners */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), /* Shadow effect */
+               0 6px 20px 0 rgba(0,0,0,0.19); /* Inner shadow */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover effect */
+.email-button:hover {
+    background-color: #ffffff; /* Darker blue on hover */
+    color: #003C43;
+    box-shadow: 0 12px 20px -10px rgba(0,0,0,0.28), /* More pronounced shadow on hover */
+               0 8px 10px -5px rgba(0,0,0,0.22); /* Inner shadow on hover */
+}
+
+.thank-you-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 850px) {
+   .contact-container {
+        padding: 1.5rem;
+    }
+
+   .contact-left {
+        padding: 1.5rem;
+    }
+
+   .contact-left-title h2 {
+        font-size: 1.8rem;
+    }
+
+   .contact-input {
+        padding: 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    button[type="submit"] {
+        padding: 0.9rem;
+        font-size: 0.95rem;
+    }
+}
+
+button[type="submit"] {
+    z-index: 9999; /* Add this line */
+
+}
+
+
+@media (max-width: 1200px) {
+  .about-points {
+    padding: 20px 80px;
+  }
+
+  .about-points p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-points {
+    padding: 20px 60px;
+  }
+
+  .about-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-points p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-points {
+    padding: 20px 40px;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-points p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-points {
+    padding: 20px 20px;
+  }
+
+  .about-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-points p {
+    font-size: 0.9rem;
+  }
+}

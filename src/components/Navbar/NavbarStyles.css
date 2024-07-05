@@ -1,0 +1,177 @@
+.NavbarItems{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+    width: 95%;
+    height: 80px;
+    border-radius: 13px;
+    position: fixed;
+    top: 20px;
+    /* These both lines are responsible for navbar center alignment */
+    left: 50%;
+    transform: translate(-50%);
+    /* Navbar always remains on the top */
+    z-index: 9999;
+}
+
+.navbar-logo{
+    color:  #003C43;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.nav-links{
+color: #003C43;
+text-decoration: none;
+font-size: 1.2rem;
+font-weight: 500;
+padding: 0.7rem 1rem;
+white-space: nowrap;
+}
+
+.nav-links i{
+    padding-right: 10px;
+}
+
+.nav-links:hover{
+    background-color:  #CA8787;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-links-mobile{
+    display: none;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    white-space: nowrap ;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+   color:#ffffff ;
+    /* color: #fff; */ 
+    background-color:#003C43 ;
+      transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+background-color: #ffffff;
+    color: #003C43;
+    border: 1px solid #003C43;
+}
+
+
+.menu-icons{
+    display: none;
+
+}
+
+.active {
+  color: #CA8787; /* Change color of the selected link */
+}
+
+
+@media screen and (max-width: 850px){
+
+    .NavbarItems{
+        z-index: 99;
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: #fff;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        opacity: 0;
+        align-items: center; 
+        padding: 80px 0 30px 0;
+        margin: 0;
+        z-index: -1;
+        transition: 0.3s ease-in-out;
+        border-radius: 13px;
+    }
+
+
+    .nav-menu.active{
+        left: 0;
+        opacity: 1;
+        z-index: -1;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-links{
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 16px 10px;
+        margin-top: 16px;
+    }
+
+      .nav-links:hover{
+    background-color:  #CA8787;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+    button{
+        display: none;
+    }
+
+    .nav-links-mobile{
+    margin-top: 26px;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    /* margin: auto; */
+    border-radius: 4px;
+    width: 240px;
+    background: #003C43;
+    color: #ffffff;
+    /* color: #77B0AA; */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.nav-links-mobile:hover{
+    background-color: #ffffff;
+    color: #003C43;
+    border: 1px solid #003C43;
+
+}
+
+.menu-icons{
+    display: block;  
+    /* Hamburger icon will display / opp. of display none */
+    cursor: pointer;
+}
+
+.menu-icons i{
+    font-size: 1.2rem;
+    color: #003C43;
+}
+    
+}
+
+

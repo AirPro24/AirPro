@@ -1,0 +1,86 @@
+.Login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.Login form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Login input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Login .submit {
+  padding: 10px;
+  background-color: #003C43;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Login .submit:hover {
+  background-color: #002b32;
+}
+
+.or-separator {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #003C43;
+}
+
+.signup-link {
+  color: #003C43;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+
+.alert {
+  position: absolute;
+  top: 20%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Ensure the alert is above other elements */
+  padding: 15px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Add animation */
+.alert.show {
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

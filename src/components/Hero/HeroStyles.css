@@ -1,0 +1,162 @@
+
+
+.hero-text {
+  text-align: center;
+  margin-top: 110px; /* Adjust as needed */
+
+}
+
+.hero{
+  /* width: 100%;
+  height: 100%; */
+  position: relative;
+}
+
+img{
+   width: 100%;
+    height: 100vh;
+  object-fit: cover;
+
+}
+
+.hero-text{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+}
+
+.hero-text h1{
+  font-size: 3rem;
+  font-weight: 800;
+  background: #003C43;
+  /* color: #7A9D54; */
+   /* color: #cbaa50; */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.hero-text p{
+  font-size: 1.3rem;
+ color: #003C43;
+   /* color: #cbaa50; */
+   padding: 0.5rem 0 2rem 0;
+     font-weight: 600;
+
+}
+
+.hero-text .show{
+  text-decoration: none;
+  background: #003C43;
+  padding: 1rem 2rem;
+  /* border-radius: 6px; */
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Hero.css */
+.link-button {
+  background-color: #003C43;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+  background-color: #004D56;
+}
+
+
+@media screen  and (max-width: 555px) {
+  .hero-text h1{
+    margin-top: 240px;
+    padding: 10px 20px;
+  }
+  
+  .hero-text p{
+    font-size: 1.1rem;
+    padding: 0 0 2rem 0;
+  }
+
+  .hero-text .show{
+  padding: 0.6rem 1.1rem;
+  /* border-radius: 6px; */
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+
+}
+
+/* iPhone XR */
+@media screen and (width: 414px) {
+  .hero-text h1 {
+    margin-top: 600px;
+  }
+}
+
+/* @media screen  and (width: 440px ) {
+
+   .hero-text h1{
+    margin-top: 220px;
+    padding: 10px 20px;
+  }
+
+} */
+
+
+@media screen  and(width: 770px)  {
+
+.hero-text h1{
+    margin-top: 270px;
+    padding: 10px 20px;
+  }
+
+
+}
+
+@media screen  and (width: 820px)  {
+
+.hero-text h1{
+    margin-top: -180px;
+    padding: 10px 20px;
+  }
+
+
+}
+
+@media screen and (width: 375px) and (height: 667px) {
+.hero-text h1{
+    margin-top: -100px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (width: 1280px) {
+  .hero-text h1{
+    margin-top: 100px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (width: 768px) {
+  .hero-text h1{
+    margin-top: 360px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (width:853) {
+   .hero-text {
+    margin-top: -100px;
+    padding: 10px 20px;
+  }
+}
