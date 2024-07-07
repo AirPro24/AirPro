@@ -87,6 +87,11 @@ background-color: #ffffff;
 
 @media screen and (max-width: 850px){
 
+    .navbar-logo{
+        font-size: 1.6rem;
+    }
+
+
     .NavbarItems{
         z-index: 99;
     }

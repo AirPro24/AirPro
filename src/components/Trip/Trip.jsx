@@ -3,7 +3,8 @@ import "./Trip.css";
 import TripData from "./TripData";
 import image1 from "../../assets/service2.jpg";
 import image2 from "../../assets/service3.jpg";
-import image3 from "../../assets/service4.jpg";
+// import image3 from "../../assets/service4.jpg";
+import image4 from "../../assets/service5.jpg";
 const Trip = () => {
   return (
     <div className="trip">
@@ -24,7 +25,7 @@ const Trip = () => {
           text="Don't just book, be supported! AirPro goes beyond a simple booking platform, offering flexibility to adjust your travel plans whenever needed.  We're here to help you navigate unexpected situations, from baggage policies and fare rules to refunds and adding services.  Our mission: a stress-free travel experience, every step of the way."
         />
         <TripData
-          image={image3}
+          image={image4}
           heading=" Fly Smart: Beat Scams"
           text="Don't fall for fake deals! Discounted tickets and promotions with hidden restrictions lurk on fraudulent websites. AirPro fights back! We actively research these sites, helping to slow down scams by empowering travelers with the right info. By avoiding overpriced tickets."
         />

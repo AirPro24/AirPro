@@ -14,28 +14,6 @@ const Destination = () => {
         <p>
           Stay Safe with AirPro: Your Guide to Avoiding Airline Ticket Scams
         </p>
-        {/* <div className="first-des">
-          <div className="des-text">
-            {" "}
-            <h2>Protecting You from Scams</h2>
-            <p>
-              dnvjksn nmvbdsmsv kjvcdm vdkjv dvbds kjdvdms kjdv vkjvbde kjd
-              vnvbvkj dvv kdsbvkjd kdsv m vkjfs vfdnb kb kj n k nfkbfbvb nh nm
-              dfv vdsvbnmdv n n n n b nb. dnvjksn nmvbdsmsv kjvcdm vdkjv dvbds
-              kjdvdms kjdv vkjvbde kjd vnvbvkj dvv kdsbvkjd kdsv m vkjfs vfdnb
-              kb kj n k nfkbfbvb nh nm dfv vdsvbnmdv n n n n b nb. dnvjksn
-              nmvbdsmsv kjvcdm vdkjv dvbds kjdvdms kjdv vkjvbde kjd vnvbvkj dvv
-              kdsbvkjd kdsv m vkjfs vfdnb kb kj n k nfkbfbvb nh nm dfv vdsvbnmdv
-              n n n n b nb.
-            </p>
-          </div>
-
-          <div className="image">
-            <img src={image} alt="" />
-            <img src={image2} alt="" />
-           
-          </div>
-        </div> */}
 
         <DestinationData
           heading="Protecting You from Scams"
